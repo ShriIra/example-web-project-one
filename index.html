@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>This is my first HTML example</title>
-        <!-- <style>
-            h1 {
-                color: #76640b;
-                background-color: blue;
+        <style>
+            main {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
             }
-        </style> -->
-        <link rel="stylesheet" href="./mystyle.css" />
-        
+        </style>
+        <script type="module" src="./mymodule.js"></script>
+        <script type="module" src="./myscript.js"></script>
     </head>
     <body>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h1>
-        <h3>Heading 3</h1>
-        <h4>Heading 4</h1>
-        <h5>Heading 5</h1>
-        <h6>Heading 6</h1>
-            <div id="hello">Previous Content</div>
-
-            <!-- <script type="text/javascript">
-                document.getElementById("hello").textContent = "Hello world!!"
-            </script> -->
+        <main>
+            <div class="info">
+                <h1>Inline JavaScript</h1>
+                <p>
+                    You can write JavaScript directly here.
+                    <code>script</code> element.
+                </p>
+            </div>
+        </main>
         
-        <script src="./myscript.js"></script>
     </body>
 </html>
