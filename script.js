@@ -1,37 +1,34 @@
-import Box from "./Box.js";
+import Backpack from "./Backpack.js";
 
-const mybox = {
-    name: "My Box",
-    color: "grey",
-    strapLength: {
-        left: 10,
-        right: 10,
-    },
-    holes: [
-        {wallnumber: 2, radius: 3},
-        {wallnumber: 4, radius: 2},
-    ],
-    drillHole: function (wallnumber, radius) {
-        this.holes.push({wallnumber: wallnumber, radius: radius});
-    },
-    newStrapLength(left, right) {
-        this.strapLength.left = left;
-        this.strapLength.right = right;
-    },
-    volume: 30,
-};
+const myBackpack = new Backpack(
+    "Everyday Backpack",
+    30,
+    "grey",
+    10,
+    20,
+    20,
+    false
+)
+const content = `
+<main>
+    <article>
+        <h1>${myBackpack.name}</h1>
+        <ul>
+            <li>Volume: ${myBackpack.volume}</li>
+            <li>Color: ${myBackpack.color}</li>
+            <li>Age:</li>
+            <li>Number of pockets: ${myBackpack.numOfPocket}</li>
+            <li>Left strap length: ${myBackpack.strapLength.left}</li>
+            <li>Right strap length: ${myBackpack.strapLength.right}</li>
+            <li>Lid status: ${myBackpack.lidOpen}</li>
+        </ul>
+    </article>
+</main>
+`
+// const myVar = 3;
+// const myVar2 = 5;
+// // const myString = 'myVar = ' + myVar + 'myVar2 = ' + myVar2;
+// const myString = `myVar = ${myVar} myVar2 = ${myVar2}`;
+// console.log(myString);
 
-console.log("This is mybox:", mybox);
-console.log({mybox});
-console.log("Strap L length:", mybox.strapLength.left);
-
-
-let propertyName = "volume";
-// console.log("volume = ", mybox["volume"]);
-console.log(`${propertyName} = `, mybox[propertyName])
-
-const newBox = new Box("My New Box", "black", 10, 10, 40);
-const newBox2 = new Box("My New Box 2", "blue", 20, 20, 60);
-
-console.log({newBox});
-console.log({newBox2});
+document.body.innerHTML = content;
