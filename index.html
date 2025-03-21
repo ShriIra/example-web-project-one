@@ -3,8 +3,43 @@
     <head>
         <script type="module" src="Backpack.js"></script>
         <script type="module" src="script.js"></script>
+        <style>
+            .highlight {
+                outline: 2px solid red;
+            }
+        </style>
     </head>
     <body id="something">
         Something else here
+        <ul>
+            <li>One</li>
+            <li class="new-highlight">Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+        </ul>
+        <p>Paragraph 1</p>
+        <h1>Heading  1</h1>
+        <p id="myparagraph" class="highlight" style="background-color:black;color:red;outline: 2px solid blue">
+            Paragraph with children
+            <em>Emphasized text <strong>Strong text</strong></em>
+        </p>
+        <div>
+            <article>
+                <h2>This is the article heading</h2>
+                <aside>
+                    <section>
+                        <h3>This is a section</h3>
+                        <ul>
+                            <li>Menu 1</li>
+                            <li id="menu2">Menu 2</li>
+                            <li>Menu 3</li>
+                            <li>Menu 4</li>
+                        </ul>
+                    </section>
+                </aside>
+            </article>
+        </div>
     </body>
 </html>
