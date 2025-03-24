@@ -1,45 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script type="module" src="Backpack.js"></script>
-        <script type="module" src="script.js"></script>
-        <style>
-            .highlight {
-                outline: 2px solid red;
-            }
-        </style>
-    </head>
-    <body id="something">
-        Something else here
-        <ul>
-            <li>One</li>
-            <li class="new-highlight">Two</li>
-            <li>Three</li>
-            <li>Four</li>
-            <li>Five</li>
-            <li>Six</li>
-        </ul>
-        <p>Paragraph 1</p>
-        <h1>Heading  1</h1>
-        <p id="myparagraph" class="highlight" style="background-color:black;color:red;outline: 2px solid blue">
-            Paragraph with children
-            <em>Emphasized text <strong>Strong text</strong></em>
-        </p>
-        <div>
-            <article>
-                <h2>This is the article heading</h2>
-                <aside>
-                    <section>
-                        <h3>This is a section</h3>
-                        <ul>
-                            <li>Menu 1</li>
-                            <li id="menu2">Menu 2</li>
-                            <li>Menu 3</li>
-                            <li>Menu 4</li>
-                        </ul>
-                    </section>
-                </aside>
-            </article>
-        </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4.6rem;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 60rem;
+        }
+        .title {
+            grid-column: span 2;
+            text-align: center;
+        }
+
+        .boxes div {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 4rem;
+            font-size: 3rem;
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <main class="boxes">
+        <h1 class="title">Demo</h1>
+        <div class="left">Box 1</div>
+        <div class="right">Box 2</div>
+    </main>
+</body>
 </html>
