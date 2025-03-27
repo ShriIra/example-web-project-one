@@ -44,7 +44,7 @@ function headingColor() {
 
 headingColor();
 
-document.querySelector(".right").style.backgroundColor = newColor;
+// document.querySelector(".right").style.backgroundColor = newColor;
 
 
 let stringDemo = "My String";
@@ -422,3 +422,55 @@ let myMappedArray = stuff.map((item) => {
 
 console.log("myMappedArray:", myMappedArray);
 
+
+const leftBox = document.querySelector(".left");
+leftBox.addEventListener("click", (event) => {
+    console.log("event:", event);
+    console.log("this:", this);
+    console.log("window:", window);
+
+    leftBox.classList.add("active");
+});
+
+
+
+const rightBox = document.querySelector(".right");
+// rightBox.addEventListener("mouseenter", (event) => {
+//     console.log("event:", event);
+//     rightBox.classList.add("active");
+// });
+
+// rightBox.addEventListener("mouseenter", function(event) {
+//     console.log("event:", event);
+//     this.classList.add("active");
+// });
+
+
+// rightBox.addEventListener("mouseleave", (event) => {
+//     // console.log("event:", event);
+//     // rightBox.classList.remove("active");
+//     console.log("this:", this);
+// })
+
+
+// rightBox.addEventListener("mouseleave", function(event) {
+//     // console.log("event:", event);
+//     // rightBox.classList.remove("active");
+//     console.log("this:", this);
+//     this.classList.remove("active");
+// })
+
+
+function mouseEnterHandler(event) {
+    console.log("this:", this);
+    this.classList.add("active");
+};
+
+function mouseLeaveHandler(event) {
+    console.log("this:", this);
+    this.classList.remove("active");
+}
+
+rightBox.addEventListener("mouseenter", mouseEnterHandler);
+
+rightBox.addEventListener("mouseleave", mouseLeaveHandler)
