@@ -1,0 +1,100 @@
+.background {
+    width: 1024px;
+    height: 768px;
+    background-color: blue;
+    background-image: url(https://t4.ftcdn.net/jpg/05/45/42/81/360_F_545428173_uyYWJoR9n5uJFYIWfDa2C49AzIECcU20.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 100%;
+}
+
+.container img {
+    /* float: left; */
+    float: right;
+}
+
+/* 
+.container>img {
+    float: left;
+    float: right;
+} */
+
+#myelement {
+    background-color: black;
+}
+
+.container {
+    width: 600px;
+    /* margin: 0 10px 0 20px; */
+    /* margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 0px auto;
+    border: 5px solid black;
+    /* padding: 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+   background: lightgreen;
+   font-size: 20px;
+   line-height: 36px;
+}
+
+span {
+    background: yellow;
+}
+
+.first-block {
+    margin-bottom: 0;
+}
+
+.second-block {
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+section {
+    /* text-align: center; */
+    /* text-align: left; */
+    text-align: justify;
+    /* text-transform: uppercase; */
+}
+
+a {
+    color: black;
+}
+
+section a {
+    color: green;
+}
+
+section p a {
+    color: pink;
+}
+
+.container > a {
+    color: orange;
+}
+
+div.box {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid black;
+}
+
+.box-1 {
+    box-sizing: content-box;
+}
+
+.box-2 {
+    box-sizing: border-box;
+}

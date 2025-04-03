@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/script.js" defer></script>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 4.6rem;
-        }
-
-        .boxes {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            max-width: 60rem;
-        }
-        .title {
-            grid-column: span 2;
-            text-align: center;
-        }
-
-        .boxes div {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 4rem;
-            font-size: 3rem;
-            color: white;
-            background-color: green;
-        }
-
-        .boxes div.active {
-            background-color: red;
-        }
-    </style>
+    <title>Default HTML styles</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-    <main class="boxes">
-        <h1 class="title">Demo</h1>
-        <div class="left">Box 1</div>
-        <div class="right">Box 2</div>
-    </main>
+
+    <div class="box box-1">Box 1</div>
+    <div class="box box-2">Box 2</div>
+
+    <section class="box container">
+        <p>Lorem <a href="#">Link ipsum - this is a descendant and not an immediate child </a> dolor sit amet consectetur, adipisicing elit. Suscipit neque cumque laborum facilis consequatur
+            culpa expedita! Asperiores facere tempore dolore excepturi veniam non officiis esse architecto? Neque ex
+            architecto optio?</p>
+        <a href="#">Link inside section as a direct child</a>
+    </section>
+    <a href="#">Link outside of section.</a>
+
+    <section>
+        <h1>Main heading</h1>
+        <span>Inline element</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error alias ut qui molestias? Dignissimos quod
+            deleniti rerum, quam reprehenderit eius placeat nostrum aliquam ipsam provident porro magni sunt consectetur
+            quos.</p>
+    </section>
+
+    <p class="first-block">Block One</p>
+    <p class="second-block">Block Two</p>
+    <span>Inline One</span>
+    <span>Inline Two</span>
+
+    <div class="container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="100"
+            height="50" />
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim inventore iure quae quam, rerum
+            sapiente dolor necessitatibus voluptatum blanditiis, nemo impedit distinctio vel perspiciatis, commodi eum
+            quod! Vel, ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos provident mollitia, iste nesciunt commodi
+            eveniet. Delectus animi dolores non. Molestias unde dolorum nobis doloremque quisquam nemo, aut expedita?
+            Similique, molestias.</p>
+    </div>
+
+    <div class="background"></div>
+
+    <header>
+        <h1>Heading 1</h1>
+        <h2>Heading 1</h2>
+        <h3>Heading 1</h3>
+        <h4>Heading 1</h4>
+        <h5>Heading 1</h5>
+        <h6>Heading 1</h6>
+    </header>
+
+    <section>
+        <p>
+            Paragraph - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis sapiente unde libero,
+            pariatur consequatur sequi voluptates magnam obcaecati nisi minus et dolore architecto culpa quos, officiis
+            ut recusandae consectetur exercitationem?
+        </p>
+        <p>
+            Paragraph - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus fugit perferendis nobis
+            cupiditate maxime, doloribus aliquam minus cum quia, explicabo illum impedit molestias minima nostrum
+            pariatur. Rerum id nesciunt voluptatum.
+        </p>
+
+        <ul>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+        </ul>
+
+        <ol>
+            <li>Ordered list item</li>
+            <li>Ordered list item</li>
+            <li>Ordered list item</li>
+            <li>Ordered list item</li>
+            <li>Ordered list item</li>
+        </ol>
+    </section>
 </body>
+
 </html>
