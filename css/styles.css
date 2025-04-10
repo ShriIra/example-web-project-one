@@ -1,0 +1,115 @@
+/* 
+    COLOR PALETTE
+
+    Dark green: #3c8453
+    Sandy beige: #bcaa96
+    Dark gray: #222222
+    Light gray: #d3d4d6
+    Off-white: #f6f6f6
+*/
+
+html {
+    font-size: 16px;
+}
+
+.home {
+    background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 
+.content-wrapper {
+    background: url(https://png.pngtree.com/background/20250102/original/pngtree-vivid-abstract-texture-a-burst-of-colorful-background-picture-image_15292555.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+} */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 0.8;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+a {
+    color: #3c8453;
+}
+
+a:hover {
+    color: #bcaa96;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: black;
+}
+
+footer a {
+    color: #3c8453
+}
+
+footer a:hover {
+    color: #bcbcbc
+}
+
+footer {
+    background: #222;
+    color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.socials {
+    list-style-type: none;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+    /* height: 132px; */
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
+
+/* RESUME CSS */
+
+.resume header::before {
+    background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg);
+    height: 375px;
+    content: "";
+    display: block;
+    background-size: cover;
+}
