@@ -1,36 +1,24 @@
-import React, { useState, useReducer, useEffect } from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import App from "./App";
 
+export const TreesContext = createContext();
 
-const initialState = {
-  message: "hi"
-}
+const trees = [
+  {id: "1", type: "Maple"},
+  {id: "2", type: "Oak"},
+  {id: "3", type: "Family"},
+  {id: "4", type: "Component"},
+];
 
-function reducer(state, action) {
-  switch(action.type) {
-    case "yell":
-        return {message: `HEY! I JUST SAID ${state.message}`}
-    case "whisper":
-        return {message: `excuse me, I just said ${state.message}`}
-  }
-}
-
-function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-
-  return (
-    <>
-      <p>Message: {state.message} </p>
-      <button onClick={() => dispatch({type: "yell"})}>YELL</button>
-      <button onClick={() => dispatch({type: "whisper"})}>Whisper</button>
-    </>
-  );
+const settings = {
+  theme: "black"
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <TreesContext.Provider value={{trees, settings}}>
+    <App login="shriira-it" />
+  </TreesContext.Provider>
 );
